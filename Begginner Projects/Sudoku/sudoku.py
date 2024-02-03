@@ -1,3 +1,11 @@
+# La logica de este bucle es:
+# - busca un espacio vacio
+# - hace un intento del 0 al 9
+# - valida si ese numero se puede poner en ese espacio en blanco
+# - sisi, pone el numero y empieza a hacer recursion osea, se repite el ciclo
+# - si al final tiene solucion, retorna True y se acaba la recursion.
+# - si no tiene solucion, vuelve y resetea el intento y prueba con otro numero. Hasta que lo consiga.
+
 def find_next_empty(puzzle):
     # finds the next row, col on the puzzle that's not filled yet ---> rep with -1
     # return row, col tuple (or (None, None) if there is none)
